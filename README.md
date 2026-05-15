@@ -1,8 +1,6 @@
-## Quickstart
+##LeanNTC
 
-### Colab
-1. Open `NTC.ipynb` in Colab.
-2. Run cells top to bottom. The notebook will mount Google Drive, download the DTD dataset, train, and visualize results.
+A reference implementation of **random-access neural texture compression**, following the design philosophy of NVIDIA's 2023 NTC paper. Textures are encoded as a 4-level feature pyramid with 8-bit quantized grids, decoded by a small MLP conditioned on bilinearly-sampled latents. Achieves ~24× compression at ~45 dB PSNR on DTD textures with ~30k parameters.
 
 ### Local
 ```bash
